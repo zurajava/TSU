@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Vehicle Routing Problem</title>
+	<h:outputStylesheet library="css" name="style.css" />
+	<h:outputStylesheet library="css" name="table-style.css" />
+</h:head>
+<h:body class="body">
+	<div class="div_conteiner">
+		<div class="div_content">
+			<h:form id="form">
+				<div class="div_header">
+					<div class="div_info_bar">
+						<div class="div_logo"></div>
+						<div class="title_text">Vehicle Routing Problem</div>
+					</div>
+				</div>
+				<p:outputLabel value="#{matric.html}" escape="false"></p:outputLabel>
+				<p:outputLabel value="Floyd"></p:outputLabel>
+				<p:outputLabel value="#{matric.floydHtml}" escape="false"></p:outputLabel>
+				
+			</h:form>
+		</div>
+	</div>
+</h:body>
+</html>

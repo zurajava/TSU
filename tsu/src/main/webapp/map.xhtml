@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Vehicle Routing Problem</title>
+	<h:outputStylesheet library="css" name="style.css" />
+	<h:outputStylesheet library="css" name="table-style.css" />
+	<script type="text/javascript"
+		src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</h:head>
+<h:body class="body">
+	<div class="div_conteiner">
+		<div class="div_content">
+			<h:form id="form">
+				<div class="div_header">
+					<div class="div_info_bar">
+						<div class="div_logo"></div>
+						<div class="title_text">Vehicle Routing Problem</div>
+					</div>
+				</div>
+				<p:spacer height="5" styleClass="div_spacer" />
+				<p:growl id="messages" showDetail="true" />
+				<p:gmap id="gmap" center="41.70600667488, 44.815105106681" zoom="5"
+					type="HYBRID" style="width:1300px;height:530px"
+					model="#{mapBean.emptyModel}" widgetVar="map">
+					<p:ajax event="pointSelect" listener="#{mapBean.onPointSelect}"
+						update="messages gmap" />
+					<p:ajax event="overlaySelect" listener="#{mapBean.onMarkerSelect}"
+						update="messages" />
+				</p:gmap>
+
+				<div class="div_toolbar">
+					<p:spacer height="5" styleClass="div_spacer" />
+					<div class="div_button">
+						<p:commandButton id="rout" icon="ui-icon-star" value="Routing"
+							actionListener="#{mapBean.route}" update="gmap" ajax="false"></p:commandButton>
+						<p:commandButton id="clear" icon="ui-icon-star" value="Clear Map"
+							action="#{mapBean.clean}" update="gmap" ajax="false"></p:commandButton>
+							
+							<p:commandButton id="showmatric" icon="ui-icon-star" value="Show Matric"
+							action="#{mapBean.showMatric}"  ajax="false"></p:commandButton>
+							
+					</div>
+					<div class="div_mes">
+						<p:messages id="mes" showDetail="true" autoUpdate="true"
+							closable="true" />
+					</div>
+	
+				</div>
+
+			</h:form>
+		</div>
+	</div>
+</h:body>
+</html>

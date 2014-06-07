@@ -1,0 +1,23 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<div class="div_heder_logo">
+	<div class="div_logo"></div>
+		<div class="title_text">UFC Reporting Manager</div>
+        <div class="div_info_bar_date_header">
+        		<div style="float: left; padding-left: 20px;">#{time.date}</div>
+        	  </div>
+        	
+		
+		<div class="div_info_bar">
+			<div class="div_info_bar_user">
+			<span class="span_pale_text">You logged in as:</span>
+			<h:outputLabel value="#{user.name}" />
+			</div>	
+			<div class="div_info_bar_logout"><a href="logout">Logout</a>
+			</div>
+	   </div>
+	</div>
+ </ui:composition>

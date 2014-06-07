@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<h:outputStylesheet name="style.css" library="css" />
+	<h:outputStylesheet library="css" name="table-style.css" />
+</h:head>
+<h:body class="body">
+
+	<div class="div_conteiner">
+		<ui:include src="resources/ui/header.xhtml" />
+		<ui:include src="resources/ui/navigation.xhtml" />
+
+		<div class="div_content">
+			<p:accordionPanel multiple="true">
+				<p:tab title="UFC Internet Payment Server">
+					<h:panelGrid columns="2" cellpadding="10">
+						<h:outputText
+							value="UFC Internet Payment Server არის სერვისი რომელიც გვაძლევს საშუალებას განვახორციელოთ ბარათზე დაფუძნებული სხავდასხვა ფინანსური ოპერაციები. ლოკალური და საერთაშორისო ბარათებისთვის ამ ოპერაციების დროს UFC-ასრულებს acquirer-ის როლს. " />
+					</h:panelGrid>
+				</p:tab>
+				<p:tab title="ორიგინატორის რეგისტრაცია/რედაქტირება">
+					<h:outputText
+						value="ორიგინატორი სისტემას გარე ფეიმენთის სერვისის პროვაიდერთან აკავშირებს და იძახებს მომხმარებლის ბარათზე ფინანსურ ოპერაციებს. ძირითად შემთხვევებში, ფეიმენთის ორიგინატორები არიან ინტერნეტ მაღაზიები, რომლებიც იღრბენ ფეიმენთებს ვიზის და მასტერქარდის ბარათებიდან.თითოეული ფეიმენთის ორიგინატორი უნდა იყოს რეგისტრირებული UFC შიდა Payment Server-ში და ოპერაციები უნდა იყვნენ მასზე მიბმულნი. ახალი ორიგინატორის დასარეგისტრირებლად ან არსებულში ცვლილებების შესატანად, მენიუში უნდა მოავირჩიოთ 'Register Originator' პუნქტი. ფორმაში უნდა მიეთითოს შემდეგი ქვემოთმოყვანილი მონაცემები:" />
+
+					<p:panelGrid style="margin-top:20px">
+						<p:row>
+							<p:column>
+								<b>სახელი</b>
+							</p:column>
+							<p:column>
+								<b>აუც.</b>
+							</p:column>
+							<p:column>
+								<b>აღწერა</b>
+							</p:column>
+						</p:row>
+
+
+						<p:row>
+							<p:column>Biller</p:column>
+							<p:column>∨</p:column>
+							<p:column>ბილერი</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Merchant ID</p:column>
+							<p:column>∨</p:column>
+							<p:column>მერჩანტის იდენტიფიკატორი</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Originator Name</p:column>
+							<p:column>∨</p:column>
+							<p:column>ორიგინატორის სახელი</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Originator PI</p:column>
+							<p:column>∨</p:column>
+							<p:column>ორიგინატორის PI</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Status</p:column>
+							<p:column>∨</p:column>
+							<p:column>ორიგინატორის სტატუსი(‘A’-აქტიური, ‘C’-დახურული, ‘T’-ტესტირების რეჟიმში)</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Payment Expiry</p:column>
+							<p:column></p:column>
+							<p:column>გადახდის ვადის გასვლის დღეების რაოდენობა, default-ად იგულისხმება unlimited</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Payment Expiry 2</p:column>
+							<p:column></p:column>
+							<p:column>დღეების რაოდენობა გადახდების დაკომპლიტების შემდეგ, როდესაც ჩაითვლება რომ გადახდა დასრულდა და ვერანაირი დამაბრუნებელი ფუქნცია ვერ შესრულდება, default-ად იგულისხმება unlimited</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Rec Pay Template</p:column>
+							<p:column></p:column>
+							<p:column></p:column>
+						</p:row>
+						<p:row>
+							<p:column>Can Complete</p:column>
+							<p:column></p:column>
+							<p:column></p:column>
+						</p:row>
+						<p:row>
+							<p:column>Can Cancel</p:column>
+							<p:column>∨</p:column>
+							<p:column></p:column>
+						</p:row>
+						<p:row>
+							<p:column>Can Return</p:column>
+							<p:column>∨</p:column>
+							<p:column></p:column>
+						</p:row>
+						<p:row>
+							<p:column>Can Get Payment</p:column>
+							<p:column>∨</p:column>
+							<p:column></p:column>
+						</p:row>
+						<p:row>
+							<p:column>Can Auto Pay</p:column>
+							<p:column>∨</p:column>
+							<p:column></p:column>
+						</p:row>
+					</p:panelGrid>
+
+
+				</p:tab>
+				<p:tab title="ორიგინატორების ჩამონათვალი">
+					<h:outputText
+						value="მენიუს 'Originator List' პუნქტს გამოაქ  UFC Internet Payment Server-ში რეგისტრირებული ორიგინატორები" />
+					<p:panelGrid style="margin-top:20px">
+						<p:row>
+							<p:column>
+								<b>სახელი</b>
+							</p:column>
+							<p:column>
+								<b>აღწერა</b>
+							</p:column>
+						</p:row>
+
+						<p:row>
+							<p:column>ID</p:column>
+							<p:column>ორიგინატორის იდენტიფიკატორი</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Name</p:column>
+							<p:column>ორიგინატორის სახელი</p:column>
+						</p:row>
+
+						<p:row>
+							<p:column>PSP</p:column>
+							<p:column></p:column>
+						</p:row>
+						<p:row>
+							<p:column>Biller</p:column>
+							<p:column>ბილერი</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Status</p:column>
+							<p:column>ორიგინატორის სტატუსი(‘A’-აქტიური, ‘C’-დახურული, ‘T’-ტესტირების რეჟიმში)</p:column>
+						</p:row>
+						<p:row>
+							<p:column>PI</p:column>
+							<p:column></p:column>
+						</p:row>
+					</p:panelGrid>
+				</p:tab>
+				<p:tab title="ტრანზაქციების ჩამონათვალი">
+					<h:outputText
+						value="მენიუს 'Transaction List' პუნქტს გამოაქვს  UFC Internet Payment Server-ის მიერ ჩატარებული ტრანზაქციები" />
+					<p:panelGrid style="margin-top:20px">
+						<p:row>
+							<p:column>
+								<b>სახელი</b>
+							</p:column>
+							<p:column>
+								<b>აღწერა</b>
+							</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Order Id</p:column>
+							<p:column>ფეიმენთის ბრაძანების იდენტიფიკატორი. ორიგინატორთან ერთად უნდა იყოს უნიკალური</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Reference Number</p:column>
+							<p:column>Retrieval Reference Data</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Status</p:column>
+							<p:column>ფეიმენთის სტატუსი</p:column>
+						</p:row>
+						<p:row>
+							<p:column>Masked Card Number</p:column>
+							<p:column>დამასკული ბარათის ნომერი</p:column>
+						</p:row>
+					</p:panelGrid>
+
+				</p:tab>
+			</p:accordionPanel>
+
+		</div>
+		<div class="div_message">
+			<p:messages id="messages" showDetail="true" autoUpdate="true" />
+		</div>
+	</div>
+
+</h:body>
+</html>

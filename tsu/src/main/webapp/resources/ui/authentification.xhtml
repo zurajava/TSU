@@ -1,0 +1,27 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<form id="loginForm" name="loginForm" action="j_spring_security_check"
+		method="post">
+
+	 <p:panel style="width:300px">  
+        <h:panelGrid columns="2" cellpadding="7" cellspacing="1">  
+            <h:outputLabel for="j_username" value="Username: *" />
+			<input type="text" name="j_username" value="" /> 
+              
+            <h:outputLabel for="j_password" value="Password: *" />
+			<input type="password" name="j_password" value="" />  
+              
+            <f:facet name="footer">
+				<input type="submit" value="Login" class="login_button" />
+			</f:facet>    
+        </h:panelGrid>  
+        
+    </p:panel>
+    
+	</form>
+
+</ui:composition>

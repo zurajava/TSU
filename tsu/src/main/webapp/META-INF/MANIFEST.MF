@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: all-themes-1.0.9.jar commons-logging-1.1.1.jar jsf-api-2.1
+ .0-b03.jar jsf-impl-2.1.0-b03.jar jsoup-1.7.2.jar jstl-1.2.jar log4j-
+ 1.2.14.jar primefaces-3.5.jar servlet-api-2.5.jar standard-1.1.2.jar
+

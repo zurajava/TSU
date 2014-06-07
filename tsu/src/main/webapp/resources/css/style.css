@@ -1,0 +1,167 @@
+.ui-widget, .ui-widget .ui-widget {
+    font-size: 90%;
+}
+.body {
+	background-color: #F2F1F1;
+	font-size: 14px;
+}
+.div_header {
+	width: 100%;
+	height: 50px;
+	background-color: #E6E6E6;
+	background-repeat: no-repeat;
+}
+.div_heder_logo {
+	width: 100%;
+	height: 135px;
+	background-color: white;
+	background-repeat: no-repeat;
+}
+.div_menu {
+	margin-bottom: 10px;
+}
+.menu_item_css {
+	min-width: 350px;
+}
+.div_menu_bar {
+	background-color: red;
+}
+
+.div_conteiner_index {
+	margin: 0 auto;
+	width: 1300px;
+	height: 300px;
+}
+.div_auth_form {
+	width: 390px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+.div_registration_form {
+	width: 400px;
+	margin: 0 auto;
+	
+}
+.div_conteiner {
+	margin: 0 auto;
+	width: 1300px;
+	height: 300px;
+}
+.div_content_index {
+	width: 335px;
+	height: 450px;
+	margin: auto;
+}
+
+.div_content {
+	float: left;
+	width: 100%;
+	height: 450px;
+}
+.div_content_auth {
+	float: left;
+	width: 100%;
+	height: 530px;
+	background-color: #FFFFFF;
+}
+
+.red-color {
+	color: #FF0000;
+	font-size: 20px;
+}
+
+.div_message {
+	float: left;
+	width: 100%;
+	height: 50px;
+}
+.h_header_info {
+	float: right;
+}
+.div_info_bar {
+	margin-right: 10px;
+	float: right;
+	height: 30px;
+	width: 100%;
+	text-align: right;
+	color: #333;
+}
+.div_save_btn {
+	float: right;
+}
+.show_report_param{
+	float: left;
+}
+.div_info_bar_user {
+	float: rigth;
+	height: 15px;
+}
+
+.div_info_bar_logout {
+	float: rigth;
+	height: 15px;
+}
+
+.div_info_bar_date {
+	clear: both;
+	margin-top: 20px;
+	height: 25px;
+}
+.div_info_bar_date_header {
+    clear: both;
+    margin-top: 20px;
+	height: 10px;
+	width: 20px;
+  
+}
+
+.span_pale_text {
+	color: #B9B9B9;
+}
+.login_button{
+	float:right;
+}
+.div_logo {
+	float: left;
+	height: 72px;
+	width: 173px;
+	margin-left: 5px;
+	margin-top: 2px;
+	background-repeat: no-repeat;
+}
+.title_text {
+	float:left;
+	color: #000000;
+	font-style:bold;
+	font-size: 25px;
+	margin-left: 850px;
+	margin-top: 20px;
+}
+.div_err_msg {
+	clear: both;
+	color: red;
+}
+.div_check_button {
+	background-color: #FFFFCC;
+	color:red;
+}
+.uiMerchantListMerchantIdFilter {
+	width: 60px !important;
+}
+.div_spacer {
+	color: red;
+}
+.div_toolbar {
+	width: 100%;
+	height: 80px;
+	background-color: #E6E6E6;
+	background-repeat: no-repeat;
+}
+.div_mes{
+	width: 100%;
+	height: 40px;
+}
+.div_button{
+	width: 100%;
+	height: 40px;
+}
